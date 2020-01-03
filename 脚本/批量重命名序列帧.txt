@@ -1,0 +1,21 @@
+@echo off
+
+
+set a=00
+
+
+setlocal EnableDelayedExpansion
+
+
+for %%n in (*.png) do (
+
+
+set /A a+=1
+
+
+ren "%%n" "Compo!a!.png"
+
+
+)
+
+// 注意：要把 .txt 后缀改成 .bat 格式才能使用
